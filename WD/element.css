@@ -1,0 +1,10 @@
+p{
+    color:red;
+}
+li{
+    list-style-type: square;
+}
+span.special,li.special{
+    color:orange;
+    font-weight: bold;
+}
