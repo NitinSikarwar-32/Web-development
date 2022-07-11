@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+      .container{
+        display: block;
+        width: 80%;
+        border: 50px solid skyblue;
+      }
+      h2{
+        display: flex;
+        justify-content: center;
+        line-height: 50px;
+      }
+      h4{
+        display: flex;
+        justify-content: center;
+      }
+      .main{
+        text-align: center;
+      }
+      .submit{
+        width: 60px;
+        height: 25px;
+        border-radius: 4px;
+        background-color: rgba(20, 18, 145, 0.557);
+        text-align: center;
+        margin-left: 49%;
+      }
+      a{
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+      }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Good Vibes Form</h2>
+        <hr />
+        <h4>Tell us something positive that happen to you today</h4>
+        <div class="main">
+           <pre> <p>Name:  <input type="text" placeholder="Enter your name" required</p></pre>
+            <pre><p>Email:  <input type="email" placeholder="abcd@gmail.com" required</p></pre>
+            <div class="scale"><p>On a scale of 1-10, how good was it? <input type="number" placeholder="Enter a number between 1-10" required</p></div>
+
+            <label for="" class="labelS">Where did it happen? </label>
+            <select name="" id="">
+              <option disabled selected>Select From Below</option>
+              <option value="Home">Home</option>
+              <option value="College">College
+              <option value="Gym">Gym</option>
+            </select>
+            <div class="opt">
+          <label for="" class="labelS">At what time of day did it happens? </label>
+          <input type="radio" name="morning" value="morning" /> Morning
+          <input type="radio" name="morning" value="afternoon" /> Afternoon
+          <input type="radio" name="morning" value="evening" /> Evening
+            </div>
+            <div class="allopt">
+                <label for="" class="labelS">What emotions did you experience? </label>
+                <input type="checkbox" name="Emotions" value="Excited" /> Excited
+                <input type="checkbox" name="Emotions" value="Humbled" /> Humbled
+                <input type="checkbox" name="Emotions" value="Elated" /> Elated
+                <input type="checkbox" name="Emotions" value="Loved" /> Loved
+                <input type="checkbox" name="Emotions" value="Enthusiastic" /> Enthusiastic
+            </div>
+            <p>Please describe your positive experience <textarea name="positive" id="positive" cols="100" rows="2" placeholder="Enter your experience here" ></textarea></p>
+           <div class="submit"> <a href="#">Submit</a></div>
+        </div>
+    </div>
+</body>
+</html>
